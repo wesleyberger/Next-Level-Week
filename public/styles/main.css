@@ -1,0 +1,23 @@
+:root {
+    --title-color: #322153;
+    --primary-color: #34cb79;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* por padrao a box é content, ao ser alterada para border-box, a borda vem depois do padding passando a ser o padrao delimitador de preenchimento*/
+}
+html {
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background: #f0f0f5;
+    -webkit-font-smoothing: antialiased; /* melhora visualização de fonte */
+}
+a {
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--title-color);
+}
