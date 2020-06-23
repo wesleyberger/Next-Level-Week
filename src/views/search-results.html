@@ -1,57 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Resultado da pesquisa</title>
+{% extends "layout.html" %}
 
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
+{% set pageId = "page-search-results" %}	
 
-  <link rel="stylesheet" href="/styles/main.css">
+{% block title %}
+  <title>Resultado da pesquisa</title>
+{% endblock title %}
+
+{% block styles %}
   <link rel="stylesheet" href="/styles/search-results.css">
-	<link rel="stylesheet" href="/styles/responsive.css">
-</head>
-<body>
+{% endblock styles %}
 
-	<div id="page-search-results">
-		<header>
-			<img src="/icones/logo.svg" alt="Logomarca">
-			<a href="index.html">
-				<span></span>
-				Voltar para Home
-			</a>
-    </header>
-    
-    <main>
-      <h4>
-        <strong>2 pontos</strong> encontrados
-      </h4>
-        <div class="cards">
+{% block content %}
+  {% include "partials/page-header.html" %}
+  <main>
+  
+  {% if total > 0 %}  
+    <h4>
+      <strong>{{total}} pontos</strong> de coleta encontrados
+    </h4>
+      <div class="cards">
+
+        {% for place in places %}
           <div class="card">
-            <img src="https://images.unsplash.com/photo-1560452265-74a9a3b351cb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Colectoria">
-            <h1>Colectoria</h1>
-            <h3>Resíduos Eletrônicos, Lâmpadas</h3>
+            <img src="{{ place.image }}" alt="{{ place.name }}">
+            <h1>{{place.name}}</h1>
+            <h3>{{place.items}}</h3>
             <p>
-              Rio do Sul, Santa Catarina <br/>
-              Guilherme Gemballa, Jardim América </br>
-              Nº 260
-            </p>
-          </div> 
-          <div class="card">
-            <img src="https://images.unsplash.com/photo-1481761289552-381112059e05?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Colectoria">
-            <h1>Papersider</h1>
-            <h3>Papéis e Papelão</h3>
-            <p>
-              Rio do Sul, Santa Catarina <br/>
-              Guilherme Gemballa, Jardim América </br>
-              Nº 260
+              {{place.city}}, {{place.state}} 
+              <br/>
+              {{place.address}}
+              </br>
+              {{place.address2}}
             </p>
           </div>
-        </div><!--div cards-->
+        {% endfor %}
+      </div><!--div cards-->
+
+  {% else %}  
+    <h4><strong>Nenhum</strong> local encontrado nessa região</h4>
+  {% endif %}  
+
     </main>
+{% endblock content%}
+
+
+     
+    
+    
 
 		
-  </div> <!-- div page-create-point -->
-  <script src="scripts/create-point.js"></script>
-</body>
-</html>
