@@ -39,16 +39,18 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
 ```bash
 
     # Clonar o repositório
-    $ git clone https://github.com/grioos/ecoleta
-
-    # Entrar no diretório
-    $ cd ecoleta
-
-    # Instale as dependências
-    $ npm install
+    $ git clone https://github.com/wesleyberger/Next-Level-Week.git
     
-    # Iniciar o projeto
-    $ npm start
+    # Necessário instalar o Node: 
+    >> https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
+    
+    # Entre na Pasta do Projeto e execute os passos::
+    
+        # Instale as dependências
+        $ npm install
+    
+        # Iniciar o projeto
+        $ npm start
     
     
     
