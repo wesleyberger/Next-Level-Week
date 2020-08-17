@@ -2,7 +2,7 @@ Desenvolvido por: Wesley Berger
 Contato: wesleyberger00@gmail.com
 
 <h1 align="center">
-    <img src="public/assets/logo.svg">
+    <img src="public/icones/logo.svg">
 </h1>
 
 <h1 align="center">
