@@ -1,5 +1,4 @@
-Desenvolvido por: Wesley Berger 
-Contato: wesleyberger00@gmail.com
+
 
 <h1 align="center">
     <img src="public/icones/logo.svg">
@@ -55,3 +54,8 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
     
     # Iniciar o projeto
     $ npm start
+    
+    
+    
+    Desenvolvido por: Wesley Berger 
+
