@@ -5,11 +5,11 @@
 </h1>
 
 <h1 align="center">
-    <img src="public/git/ecoleta.gif">
+    <img src="public/git/indexpg.png"  width="49%" height"100%">
 </h1>
 
-<h1>
-    <img src="public/git/indexpg.png"  width="49%" height"100%">
+<h1 align="center">
+    <img src="public/git/ecoleta.gif">
 </h1>
 
 <h3 align="center">
