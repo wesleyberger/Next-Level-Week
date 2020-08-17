@@ -10,7 +10,7 @@ Contato: wesleyberger00@gmail.com
 </h1>
 
 <h1>
-    <img src="public/github/indexpg.PNG"  width="49%" height"100%">
+    <img src="public/git/indexpg.PNG"  width="49%" height"100%">
     <img src="public/github/create-pointpg.PNG"  width="49%" height"100%">
 </h1>
 
