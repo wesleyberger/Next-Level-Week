@@ -6,7 +6,7 @@ Contato: wesleyberger00@gmail.com
 </h1>
 
 <h1 align="center">
-    <img src="public/github/ecoleta.gif">
+    <img src="public/git/ecoleta.gif">
 </h1>
 
 <h1>
